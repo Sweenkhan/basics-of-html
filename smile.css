@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.faceCircle {
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: lightsalmon;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation: move 2s ease-in-out 1s 2 alternate;
+}
+
+/* <!--inline-animation-->    */
+.eyebrowleft {
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    border-top: 2px solid black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    animation: wink 0.5s linear 5s 2 alternate;
+}
+
+.eyebrowRight {
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    border-top: 2px solid black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.leftside {
+    height: 100%;
+    width: 100%;
+}
+
+.eyeleft {
+    position: absolute;
+    bottom: 11rem;
+    left: 4.3rem;
+    width: 40px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: eyeclose 0.5s linear 5s 2 alternate;
+}
+
+.eyeright {
+    position: absolute;
+    bottom: 11rem;
+    right: 4.3rem;
+    width: 40px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.eyeleft::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 24px;
+    width: 35px;
+    height: 36px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.eyeright::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 24px;
+    width: 35px;
+    height: 36px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.nose {
+    position: absolute;
+    top: 8rem;
+    left: 9rem;
+    width: 10px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.smile {
+    position: absolute;
+    bottom: 4rem;
+    left: 7.5rem;
+    width: 60px;
+    height: 20px;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    animation: smile 1s linear 6s 1 alternate;
+}
+
+@keyframes smile {
+    from {
+        width: 0;
+        left: calc(7.5rem + 30px);
+    }
+
+    to {
+        width: 60px;
+        left: 7.5rem;
+    }
+
+}
+
+@keyframes move {
+    from {
+        left: 0;
+        top: 0;
+        transform: rotate(0);
+    }
+
+    to {
+        left: 1200px;
+        top: 0;
+        transform: rotate(180deg);
+    }
+
+}
+
+
+@keyframes wink {
+    from {
+        top: 3rem;
+    }
+
+    to {
+        top: 6rem;
+    }
+}
+
+@keyframes eyeclose {
+    from {
+        height: 60px;
+        width: 40px;
+    }
+
+    to {
+        height: 10px;
+        width: 39px;
+    }
+
+}
+
+#boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box {
+    width: 30%;
+    height: 300px;
+    
+}

@@ -1,0 +1,27 @@
+:root {
+    background-color: #ff4343;
+}
+
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> COUNTDOWN </title>
+    <link rel="stylesheet" href="countDown.css" type="text/css">
+</head>
+<body>
+
+ 
+<div id="wrapper">
+  
+    <h2>HAPPY NEW YEAR</h2>
+    <div class="countdown">
+      <div><p class="d"></p> days </div>
+      <div><p class="h"></p> hours </div>
+      <div><p class="m"></p> minutes </div>
+      <div><p class="s"></p> seconds </div>
+    </div>
+</div>    
+ 
+<p class="footer"></p>
+
+    <script>
+      var countDown = new Date("Jan 01, 2023 00:00:00").getTime();
+
+ var x = setInterval(function() { 
+  
+ var now = new Date(). getTime();
+ var distance = countDown - now;
+  
+  
+ var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+ var hours =  Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+ var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+ var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+ 
+
+document.querySelector(".d").innerHTML = days ;
+document.querySelector(".h").innerHTML = hours;
+document.querySelector(".m").innerHTML = minutes;
+document.querySelector(".s").innerHTML = seconds;
+
+  
+ if(distance < 0) {
+   clearInterval(x);
+   
+   document.getElementById("demo").innerHTML = "EXPIRED";
+ }
+  
+  }, 1000);
+
+
+    </script>
+</body>
+</html>

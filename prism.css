@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+                                /* left-part */
+
+.left-part {
+    height: 100vh;
+    width: 45%;
+    padding: 30px 80px 10px;
+}
+
+/* input:focus, textarea:focus, select:focus {
+    outline: none;
+} */
+
+.logo{
+   margin: 10px 0 30px;
+}
+
+.welcome-hand {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-wlcm{
+    padding: 10px 0 5px;
+    font-size: 20px;
+    margin: auto 5px auto 10px;
+}
+
+.hand {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.hand img {
+    width: 100%;
+    height: 100%;
+}
+
+.first-title {
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.email, .pswd {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    width: 100%;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* background-color: rgb(221, 248, 239); */
+    outline: none;
+    margin-top: 20px;
+    padding: 10px;
+    transition: border 0.5s;
+}
+
+.email input, .pswd input {
+   border: none;
+   outline: none;
+   margin-top: 6px;
+}
+
+.email:visited, .pswd:visited {
+     background-color: rgb(221, 248, 239);
+}
+ 
+.email:hover, .pswd:hover {
+    border: 1px solid rgba(0, 0, 0, 0.5);  
+}
+
+.remember {
+   margin: 25px 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+.frgt-pswd {
+    text-decoration: none;
+    color: rgb(26, 26, 163);
+    font-size: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.frgt-pswd::after {
+    content: '';
+    position: absolute;
+    bottom: 37px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: blue;
+    transition: all 0.5s;
+}
+
+.frgt-pswd:hover::after {
+    width: 30px;
+}
+
+.remember .login {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    height: 55px;
+    width: 110px;
+    transition: all 1s;
+    font-size: 1rem;
+    position: relative;
+    padding: 5px 40px 5px 5px ;
+    cursor: pointer;
+}
+
+.icon {
+    color: rgb(9, 224, 124);
+    position: absolute;
+    right: 25px;
+    top: 17px;
+    transition: all 0.5s;
+    font-size: 1.1rem;
+}
+
+.login:hover .icon {
+    right: 12px;
+
+}
+
+.social-media {
+    text-align: center;
+    color:  rgba(0, 0, 0, 0.6); 
+}
+
+.icons {
+    margin: 10px;
+}
+
+ .icons .icona, .iconb {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 14px;
+    margin:4px 7px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    cursor: pointer;
+ }
+
+ .icons .icona:hover {
+    background-color: red;
+    color: white;
+    border-color: red;
+ }
+
+ .icons .iconb:hover {
+    background-color: blue;
+    color: white;
+    border-color: blue;
+ }
+
+ .network {
+    font-size: 14px;
+    margin-top: 50px;
+ }
+
+ .trademark {
+    font-size: 10px;
+    margin: 25px auto 2px;
+    padding-bottom: 2px;
+ }
+
+                                /* .right-part */
+
+.right-part {
+    height: 100vh;
+    width: 55%;
+    background-image: url("images/full-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.rightside-content h2{
+    margin-top: 80px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.rightside-content p {
+    margin: 10px 20px 0;
+    font-weight: 1rem;
+    font-weight: 700;
+}
+
+.content-image {
+    width: 600px;
+    height: 600px;
+    margin-bottom: 90px;
+    margin-left: 90px;
+    position: absolute;
+    top: 10px;
+}
+
+.content-image img {
+    width: 100%;
+    height: 100%;
+}
+
+ 
+ 
+
+
+
